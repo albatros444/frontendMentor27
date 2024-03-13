@@ -235,5 +235,8 @@ ul {
   color: hsl(183, 98%, 20%);
   background-color: hsl(183, 96%, 22%);
 }
+.background .card__right .resetLight {
+  background-color: hsl(172, 67%, 45%);
+}
 
 /*# sourceMappingURL=main.css.map */
