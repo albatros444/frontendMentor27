@@ -1,10 +1,9 @@
 @media screen and (max-width: 540px) {
   .background {
     padding-bottom: 0px;
-
     .logo {
-      padding-top: 45px;
-      padding-bottom: 45px;
+      padding-top: 46px;
+      padding-bottom: 33px;
     }
     .card {
       flex-direction: column;
@@ -12,12 +11,12 @@
       max-width: 390px;
       height: 100%;
 
-      border-radius: 30px 30px 0 0;
+      border-radius: 28px 28px 0 0;
       &__left {
         width: 100%;
         padding: 32px;
         &__bill {
-          margin-bottom: 20px;
+          margin-bottom: 32px;
         }
         &__selectTip {
           .fieldset {
@@ -32,15 +31,18 @@
       &__right {
         flex-grow: 0;
         margin: 0px 24px 44px 24px;
-        padding: 20px;
+        padding: 24px;
+        padding-top: 38px;
+
         &__tipAmount {
+          margin-bottom: 23px;
           p {
             font-size: 30px;
             font-weight: 600;
           }
         }
         &__total {
-          margin-bottom: 30px;
+          margin-bottom: 32px;
           p {
             font-size: 30px;
             font-weight: 600;

@@ -66,16 +66,17 @@ ul {
 .background .logo {
   width: 87px;
   margin: 0 auto;
-  padding-top: 16vh;
-  padding-bottom: 7vh;
+  padding-top: 15vh;
+  padding-bottom: 8vh;
 }
 .background .card {
   display: flex;
   width: 920px;
   height: 480px;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 27px;
   background-color: white;
+  box-shadow: 0px 30px 50px hsl(181, 34%, 76%);
 }
 .background .card__left {
   width: 475px;
@@ -84,27 +85,39 @@ ul {
 .background .card__left input {
   display: block;
   width: 100%;
-  height: 45px;
-  margin-top: 10px;
+  height: 48px;
+  margin-top: 8px;
   padding-right: 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 24px;
   font-weight: 600;
   text-align: right;
-  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  color: hsl(182, 87%, 17%);
   background-color: hsl(189, 41%, 97%);
+  transition: all 0.013s ease-in-out;
+}
+.background .card__left input::placeholder {
+  color: hsl(183, 20%, 38%);
+}
+.background .card__left input:hover {
+  border: 2px solid hsl(175, 56%, 48%);
+}
+.background .card__left .radioCustom::placeholder {
+  color: hsl(182, 82%, 13%);
 }
 .background .card__left svg {
   position: absolute;
-  top: 47px;
-  left: 15px;
+  top: 45px;
+  left: 18px;
 }
 .background .card__left label,
 .background .card__left .legend {
   display: block;
   position: relative;
   font-size: 15px;
+  letter-spacing: 0.05em;
   font-weight: 600;
   color: hsl(186, 14%, 43%);
 }
@@ -113,8 +126,7 @@ ul {
 }
 .background .card__left__selectTip .fieldset {
   width: 100%;
-  padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .background .card__left__selectTip .fieldset .grid {
   display: grid;
@@ -124,6 +136,7 @@ ul {
   grid-template-rows: 48px 48px;
   width: 100%;
   height: 112px;
+  margin-top: 17px;
 }
 .background .card__left__selectTip .fieldset .grid .radioInput {
   display: block;
@@ -133,12 +146,17 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 1.03em;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
-  color: hsl(0, 0%, 100%);
+  color: hsl(189, 41%, 97%);
   background-color: hsl(183, 100%, 15%);
+  transition: all 0.1s ease-in-out;
+}
+.background .card__left__selectTip .fieldset .grid .radioInput:hover {
+  background-color: hsl(171, 71%, 80%);
+  color: hsl(182, 87%, 17%);
 }
 .background .card__left__selectTip .fieldset .grid .radioCustom {
   height: 48px;
@@ -175,26 +193,26 @@ ul {
 .background .card__right {
   flex-grow: 1;
   margin: 32px 32px 32px 0px;
-  padding: 40px;
-  border-radius: 12px;
+  padding: 43px 40px;
+  border-radius: 14px;
   background-color: hsl(183, 100%, 15%);
 }
 .background .card__right__tipAmount {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .background .card__right__tipAmount div p:nth-child(1) {
   font-size: 16px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(189, 41%, 97%);
 }
 .background .card__right__tipAmount div p:nth-child(2) {
-  font-size: 14px;
+  font-size: 13px;
   color: hsl(184, 14%, 56%);
 }
 .background .card__right__tipAmount p {
-  font-size: 44px;
+  font-size: 47px;
   font-weight: 600;
   color: hsl(172, 67%, 45%);
 }
@@ -206,34 +224,40 @@ ul {
 }
 .background .card__right__total div p:nth-child(1) {
   font-size: 16px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(189, 41%, 97%);
 }
 .background .card__right__total div p:nth-child(2) {
-  font-size: 14px;
+  font-size: 13px;
   color: hsl(184, 14%, 56%);
 }
 .background .card__right__total p {
-  font-size: 44px;
+  font-size: 47px;
   font-weight: 600;
   color: hsl(172, 67%, 45%);
 }
 .background .card__right button {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 48px;
   padding: 0;
+  padding-top: 2px;
   border: none;
   border-radius: 4px;
   outline: inherit;
   cursor: pointer;
   font-family: inherit;
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 800;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: hsl(183, 98%, 20%);
+  color: hsl(183, 97%, 15%);
   background-color: hsl(183, 96%, 22%);
+  transition: all 0.1s ease-in-out;
+}
+.background .card__right button:hover {
+  background-color: hsl(171, 71%, 80%);
+  color: hsl(182, 87%, 17%);
 }
 .background .card__right .resetLight {
   background-color: hsl(172, 67%, 45%);
@@ -244,22 +268,22 @@ ul {
     padding-bottom: 0px;
   }
   .background .logo {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 46px;
+    padding-bottom: 33px;
   }
   .background .card {
     flex-direction: column;
     width: 100%;
     max-width: 390px;
     height: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 28px 28px 0 0;
   }
   .background .card__left {
     width: 100%;
     padding: 32px;
   }
   .background .card__left__bill {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
   .background .card__left__selectTip .fieldset .grid {
     grid-template-columns: 146px 146px;
@@ -269,14 +293,18 @@ ul {
   .background .card__right {
     flex-grow: 0;
     margin: 0px 24px 44px 24px;
-    padding: 20px;
+    padding: 24px;
+    padding-top: 38px;
+  }
+  .background .card__right__tipAmount {
+    margin-bottom: 23px;
   }
   .background .card__right__tipAmount p {
     font-size: 30px;
     font-weight: 600;
   }
   .background .card__right__total {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
   .background .card__right__total p {
     font-size: 30px;
