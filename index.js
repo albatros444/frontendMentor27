@@ -93,4 +93,6 @@ resetButton.addEventListener("click", () => {
     b.classList.remove("active");
     customField.classList.remove("active");
   });
+  totalField.innerText = "0.00";
+  tipAmountField.innerText = "0.00";
 });
